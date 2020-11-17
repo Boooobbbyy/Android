@@ -2,6 +2,8 @@ package com.example.mylistview;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ListActivity;
+import android.content.Intent;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.view.View;
@@ -36,7 +38,10 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(MainActivity.this, heroes.get(i).getName(), Toast.LENGTH_SHORT).show();
+                if (position == 0) {
+                    Intent intent = new Intent(view.getContext(), Facebook.class);
+                    startActivityForResult(intent, 0);
+                }
             }
         });
     }
@@ -59,5 +64,5 @@ public class MainActivity extends AppCompatActivity {
         }
 
         adapter.setHeroes(heroes);
-    }
+}
 }

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/img_photo"
+        android:src="@drawable/sidomukti"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_below="@id/img_photo"
+        android:text="Batik Sidomukti"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_name"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxLines="30"
+        android:text="Batik Sidomukti merupakan salah satu jenis batik keraton yang dilukis menggunakan zat pewarna soga alam. Zat soga alam merupakan pewarna alami berwarna coklat yang merupakan pewarna klasik untuk seni lukis batik. Sesuai dengan namanya, filosofinya diambil dari kata “sido” yang berarti menjadi atau jadi dan “mukti” yang berarti mulia serta sejahtera. Jadi, filosofi dari batik ini adalah nilai kemuliaan dan sejahtera, sesuai dengan peruntukkan keraton." />
+
+</RelativeLayout>

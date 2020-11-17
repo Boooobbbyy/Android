@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/img_photo"
+        android:src="@drawable/sekar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_below="@id/img_photo"
+        android:text="Batik Sekar Jagad"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_name"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxLines="30"
+        android:text="Batik Sekar Jagad merupakan batik dengan motif unik yang membuat orang terpesona saat melihatnya. Motif ini melambangkan keragaman Nusantara dan dunia. Bahkan ada yang menilai bahwa motif batik ini dibentuk menyerupai pulau." />
+
+</RelativeLayout>

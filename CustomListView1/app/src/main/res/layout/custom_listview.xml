@@ -8,7 +8,7 @@
         android:id="@+id/imageList"
         android:layout_width="100dp"
         android:layout_height="150dp"
-        android:scaleType="fitXY" />
+        android:scaleType="fitXY" />Subhead"
 
     <TextView
         android:id="@+id/text_headline"
@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/text_headline"
-        android:hint="Subhead"
+        android:hint="
         android:layout_marginStart="125dp"
         android:layout_marginTop="10dp"
         android:layout_toEndOf="@id/img_photo"

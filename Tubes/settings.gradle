@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "MyListView"
+rootProject.name='Batik App'
